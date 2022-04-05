@@ -10,7 +10,7 @@ class NavBar extends React.Component
 		return(
 			<>
 				<div class="sideNavBar">
-					<h3 style={{color: "white", font: "Trebuchet MS", textAlign: "center"}}>Editor Utility Widget Helper Functions</h3>
+					<h3 style={{color: "white", fontFamily: "DejaVu", textAlign: "center"}}>Editor Utility Widget Helper Functions</h3>
 					{
 						SideBarButtons.map(eachIteration =>
 							<button style={{width: "100%", textAlign: "left"}} class="navButton" id={eachIteration}>{eachIteration}</button>

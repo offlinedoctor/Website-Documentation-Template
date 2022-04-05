@@ -10,3 +10,27 @@
 	position: fixed;
 	padding-top: 20px;
 }
+
+.navButton
+{
+	font-family: "Trebuchet MS";
+	border: solid black;
+	background: linear-gradient(to right, black 50%, white 50%);
+	background-size: 200% 100%;
+	background-position: right;
+	color: black;
+	transition: 0.5s;
+}
+
+.navButton:hover
+{
+	background-position: left;
+	color: white;
+}
+
+.navButton:active
+{
+	transition: 0.1s;
+	background: white;
+	color: white;
+}

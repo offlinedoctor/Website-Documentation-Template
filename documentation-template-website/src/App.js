@@ -1,15 +1,21 @@
 import React from 'react';
 import NavBar from './NavBar.js';
-import MainContent from './MainContent.js';
+import TitleAndHeading from './TitleAndHeading.js';
+import TextPackage from './textpackage.json';
 
 class App extends React.Component
 {
+	componentDidMount()
+	{
+		;
+	}
+	
 	render()
 	{
 		return(
 			<>
 				<NavBar/>
-				<MainContent/>
+				<TitleAndHeading title={TextPackage.titlePage.heading} description={TextPackage.titlePage.description}/>
 			</>
 		);
 	}

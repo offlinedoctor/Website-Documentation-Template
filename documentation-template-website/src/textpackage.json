@@ -5,39 +5,19 @@
 		"description": "The Editor Utility Widget Helper Functions attempts to bring out some of the hidden capabilities of the Unreal Engine and bring them out to the forefront for use in Blueprints. This allows you to prototype, iterate and create Editor tools much more quickly."
 	},
 
-	"documentation":
-	{
-		"heading": "Documentation",
-		"description": "Below you'll find detailed examples of each of the functions that this plugin provides.",
-		
-		"heading1": "Helper Functions",
-		"description1": "Helper Functions refer to C++ functions that have a Blueprint equivalent.",
-				
-		"function1heading1": "Notifications - Generic",
-		"function1desc1": "The generic notification system can be called to show the user a message that appears on the side of their screen",
-		
-		"functionheading2": "Notifications - Alert",
-		"functiondesc2": "This notification takes a boolean input and returns 'Success' if the prior action was successful, or 'Fail', if the prior action was unsuccessful.",
+	"documentation_helper_functions":
+	[
+		["Notifications - Generic", "The generic notification system can be called to show the user a message that appears on the side of their screen"],
+		["Notifications - Alert", "This notification takes a boolean input and returns 'Success' if the prior action was successful, or 'Fail', if the prior action was unsuccessful."],
+		["Save & Load to a Text File", "Helper Function that allows you to load from a save file to a string array, or save a string to a text file. Works with .ini files too"]
+	],
 
-		"functionheading3": "Save & Load to a Text File",
-		"functiondesc3": "Helper Function that allows you to load from a save file to a string array, or save a string to a text file. Works with .ini files too",
-		
-		"heading2": "New UMG",
-		"description2": "In addition to helper functions, there also a range of new UMG's hidden within Unreal Engine",
-		
-		"umgheading1": "Progress Bar",
-		"umgdesc1": "Synch this with a for loop process to get a progress bar that fills up as the for loop itself fills up.",
-		
-		"umgheading2": "Color Picker",
-		"umgdesc2": "Allows you to select a color. Combine with the output function to get the RGB color selected",
-		
-		"umgheading3": "Object Filter",
-		"umgdesc3": "Select an Actor from the scene. Combine with the output function to get the actor selected",
-		
-		"umgheading4": "Volume Slider",
-		"umgdesc4": "A volume slider. Can be moved around, but does not actually affect the world volume. Combine with the output function to get the current value and pin it to other functions.",
-		
-		"umgheading5": "Notification Confirmation",
-		"umgdesc5": "A generic notification system with an 'Okay', 'Cancel', 'Cross', option. Useful to ensure User is aware of what they are doing before undertaking the action. Option chosen outputs as a struct"
-	}
+	"documentation_custom_umg":
+	[
+		["Progress Bar", "Synch this with a for loop process to get a progress bar that fills up as the for loop itself fills up"],
+		["Color Picker", "Allows you to select a color. Combine with the output function to get the RGB color selected"],
+		["Object Filter", "Select an Actor from the scene. Combine with the output function to get the actor selected"],
+		["Volume Slider", "A volume slider. Can be moved around, but does not actually affect the world volume. Combine with the output function to get the current value and pin it to other functions."],
+		["Notification Confirmation", "A generic notification system with an 'Okay', 'Cancel', 'Cross', option. Useful to ensure User is aware of what they are doing before undertaking the action. Option chosen outputs as a struct"]
+	]
 }

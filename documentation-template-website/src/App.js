@@ -4,12 +4,17 @@ import NavBar from './NavBar.js';
 import TitleAndHeading from './TitleAndHeading.js';
 import Documentation from './Documentation.js';
 
-
 class App extends React.Component
 {
 	componentDidMount()
 	{
-		;
+		console.log(TextPackage.documentation_helper_functions);
+		TextPackage.documentation_helper_functions.map((eachElement) =>
+			{
+				console.log(eachElement[0]);
+				console.log(eachElement[1]);
+			}
+		);
 	}
 	
 	render()
@@ -18,7 +23,7 @@ class App extends React.Component
 			<>
 				<NavBar/>
 				<TitleAndHeading title={TextPackage.titlePage.heading} description={TextPackage.titlePage.description}/>
-				<Documentation />
+				<Documentation documentation_helper_functions={TextPackage.documentation_helper_functions}/>
 			</>
 		);
 	}

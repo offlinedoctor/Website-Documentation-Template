@@ -12,7 +12,8 @@ class Documentation extends React.Component
 						<h1>Documentation</h1>
 						<h2>Below you'll find detailed examples of each of the functions that this plugin provides.</h2>
 					</div>
-					
+				</div>
+				<div style={{paddingTop: "350px", paddingBottom: "350px"}}>
 					<h3 id="Documentation - Helper Functions">Helper Functions</h3>
 					<h3>Helper Functions refer to C++ functions that have a Blueprint equivalent.</h3>
 					
@@ -27,8 +28,8 @@ class Documentation extends React.Component
 						}
 					</div>
 				</div>
-				<div style={{paddingTop: "350px", paddingBottom: "350px"}} id="Documentation - Custom UMGs">
-					<h3>Custom UMGs</h3>
+				<div style={{paddingTop: "350px", paddingBottom: "350px"}}>
+					<h3 id="Documentation - Custom UMGs">Custom UMGs</h3>
 					<h3>New UMG's designed to support more advanced Editor Tools</h3>
 					
 					<div style={{display: "flex", flexDirection: "column", gap: "25px"}}>

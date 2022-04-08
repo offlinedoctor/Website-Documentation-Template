@@ -9,7 +9,9 @@
 	[
 		["Notifications - Generic", "The generic notification system can be called to show the user a message that appears on the side of their screen"],
 		["Notifications - Alert", "This notification takes a boolean input and returns 'Success' if the prior action was successful, or 'Fail', if the prior action was unsuccessful."],
-		["Save & Load to a Text File", "Helper Function that allows you to load from a save file to a string array, or save a string to a text file. Works with .ini files too"]
+		["Show Open File Dialog", "A window popout that allows you to select the file of interest, outputting the file path as a string"],
+		["Save & Load to a Text File", "Helper Function that allows you to load from a save file to a string array, or save a string to a text file. Works with .ini files too"],
+		["Is Key Down?", "Helper Function that indicates whether or not a particular key is being held down"]
 	],
 
 	"documentation_custom_umg":

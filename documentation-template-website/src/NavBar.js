@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBarStyle from './NavBar.css';
 
-const SideBarButtons = ["Introduction", "Documentation", "Sources", "Special Thanks"];
+const SideBarButtons = ["Introduction", "Documentation - Helper Functions", "Documentation - Custom UMGs", "Sources", "Special Thanks"];
 
 class NavBar extends React.Component
 {

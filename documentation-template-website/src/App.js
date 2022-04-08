@@ -22,8 +22,8 @@ class App extends React.Component
 		return(
 			<>
 				<NavBar/>
-				<TitleAndHeading title={TextPackage.titlePage.heading} description={TextPackage.titlePage.description}/>
-				<Documentation documentation_helper_functions={TextPackage.documentation_helper_functions}/>
+				<TitleAndHeading title={TextPackage.titlePage.heading} description={TextPackage.titlePage.description} />
+				<Documentation documentation_helper_functions={TextPackage.documentation_helper_functions} documentation_custom_umg={TextPackage.documentation_custom_umg}/>
 			</>
 		);
 	}

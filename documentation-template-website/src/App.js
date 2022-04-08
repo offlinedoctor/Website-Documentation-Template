@@ -1,7 +1,7 @@
 import TextPackage from './textpackage.json';
 import React from 'react';
 import NavBar from './NavBar.js';
-import TitleAndHeading from './TitleAndHeading.js';
+import Introduction from './Introduction.js';
 import Documentation from './Documentation.js';
 
 class App extends React.Component
@@ -22,7 +22,7 @@ class App extends React.Component
 		return(
 			<>
 				<NavBar/>
-				<TitleAndHeading title={TextPackage.titlePage.heading} description={TextPackage.titlePage.description} />
+				<Introduction title={TextPackage.titlePage.heading} description={TextPackage.titlePage.description} />
 				<Documentation documentation_helper_functions={TextPackage.documentation_helper_functions} documentation_custom_umg={TextPackage.documentation_custom_umg}/>
 			</>
 		);

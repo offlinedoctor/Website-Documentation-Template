@@ -12,3 +12,15 @@
 	margin-left: 20%;
 	font-weight:normal;
 }
+
+#HoverImage
+{
+	width: 100%;
+	transition: .2s;
+}
+
+#HoverImage:hover
+{
+	transform: scale(2) translate(-25%,0);
+	padding-right: 50px;
+}

@@ -3,6 +3,22 @@ import DocumentationStyle from './Documentation.css';
 
 class Documentation extends React.Component
 {
+	constructor()
+	{
+		super()
+		this.ShowDialog = this.ShowDialog.bind(this);
+	}
+	
+	ShowDialog(event)
+	{
+		console.log(event.target.id);
+		
+		var StoreDialog = <dialog id="dialog2"> test </dialog>;
+		
+		return StoreDialog;
+		
+	}
+	
 	render()
 	{
 		return(
@@ -15,14 +31,19 @@ class Documentation extends React.Component
 				</div>
 				<div style={{paddingTop: "350px", paddingBottom: "350px"}}>
 					<h3 id="Documentation - Helper Functions">Helper Functions</h3>
-					<h3>Helper Functions refer to C++ functions that have a Blueprint equivalent.</h3>
+					<h3 style={{paddingBottom: "50px"}}>Helper Functions refer to C++ functions that have a Blueprint equivalent.</h3>
 					
 					<div style={{display: "flex", flexDirection: "column", gap: "25px"}}>
 						{					
 							this.props.documentation_helper_functions.map(eachIteration =>
-								<div style={{display: "flex", flexDirection: "row", gap: "25px"}}>
-									<h3> {eachIteration[0]} </h3>
-									<h3> {eachIteration[1]} </h3>
+								<div>
+									<div style={{display: "flex", flexDirection: "row", gap: "25px", paddingTop: "55px"}}>
+										<h3> {eachIteration[0]} </h3>
+										<h3> {eachIteration[1]} </h3>
+										<div>
+											<img  id="HoverImage" src={eachIteration[2]} />
+										</div>
+									</div>
 								</div>
 							)
 						}
@@ -36,13 +57,15 @@ class Documentation extends React.Component
 						{					
 							this.props.documentation_custom_umg.map(eachIteration =>
 								<div style={{display: "flex", flexDirection: "row", gap: "25px"}}>
-									<h3> {eachIteration[0]} </h3>
-									<h3> {eachIteration[1]} </h3>
+									<div style={{display: "flex", flexDirection: "column", gap: "25px", paddingTop: "25px"}}>
+										<h3 style={{paddingLeft: "10px", textAlign: "left"}}> {eachIteration[0]} </h3>
+										<h3 style={{paddingLeft: "10px", textAlign: "left"}}> {eachIteration[1]} </h3>
+									</div>
+									<img  style={{height: "300px", width: "300px"}} src={eachIteration[2]}/>
 								</div>
 							)
 						}
 					</div>
-					
 				</div>	
 			</div>
 		);

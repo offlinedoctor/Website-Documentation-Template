@@ -2,7 +2,7 @@ import React from 'react';
 import NavBarStyle from './NavBar.css';
 import { Link } from "react-scroll";
 
-const SideBarButtons = ["Introduction", "Documentation - Helper Functions", "Documentation - Custom UMGs", "Sources", "Special Thanks"];
+const SideBarButtons = ["Introduction", "Documentation - Helper Functions", "Documentation - Custom UMGs", "Sources"];
 
 class NavBar extends React.Component
 {

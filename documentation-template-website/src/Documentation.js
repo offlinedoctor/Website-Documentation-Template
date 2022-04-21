@@ -56,12 +56,14 @@ class Documentation extends React.Component
 					<div style={{display: "flex", flexDirection: "column", gap: "25px"}}>
 						{					
 							this.props.documentation_custom_umg.map(eachIteration =>
-								<div style={{display: "flex", flexDirection: "row", gap: "25px"}}>
-									<div style={{display: "flex", flexDirection: "column", gap: "25px", paddingTop: "25px"}}>
-										<h3 style={{paddingLeft: "10px", textAlign: "left"}}> {eachIteration[0]} </h3>
-										<h3 style={{paddingLeft: "10px", textAlign: "left"}}> {eachIteration[1]} </h3>
+								<div>
+									<div style={{display: "flex", flexDirection: "row", gap: "25px", paddingTop: "55px"}}>
+										<h3> {eachIteration[0]} </h3>
+										<h3> {eachIteration[1]} </h3>
+										<div>
+											<img  id="HoverImage" src={eachIteration[2]} />
+										</div>
 									</div>
-									<img  style={{height: "300px", width: "300px"}} src={eachIteration[2]}/>
 								</div>
 							)
 						}
